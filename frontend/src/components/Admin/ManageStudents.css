@@ -1,0 +1,109 @@
+/* src/components/Admin/ManageStudents.css */
+.manage-students-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.manage-students-container h1 {
+  font-size: 32px;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.search-input,
+.filter-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.students-table {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.students-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.students-table th {
+  text-align: left;
+  padding: 12px;
+  background: var(--background-light);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.students-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* src/components/Admin/ManageCompanies.css */
+.manage-companies-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.manage-companies-container h1 {
+  font-size: 32px;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.companies-table {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.companies-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.companies-table th {
+  text-align: left;
+  padding: 12px;
+  background: var(--background-light);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.companies-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.verified {
+  background: #e8f5e9;
+  color: var(--success-color);
+}
+
+.badge.unverified {
+  background: #fff3e0;
+  color: var(--warning-color);
+}

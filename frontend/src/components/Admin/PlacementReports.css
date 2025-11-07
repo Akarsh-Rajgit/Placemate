@@ -1,0 +1,54 @@
+/* src/components/Admin/PlacementReports.css */
+.placement-reports-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.placement-reports-container h1 {
+  font-size: 32px;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.year-selector {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.year-selector label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.year-selector select {
+  padding: 10px 16px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.section th {
+  text-align: left;
+  padding: 12px;
+  background: var(--background-light);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.section td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+}

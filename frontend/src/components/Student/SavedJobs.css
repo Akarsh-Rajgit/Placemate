@@ -1,0 +1,153 @@
+/* src/components/Student/SavedJobs.css */
+.saved-jobs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.saved-jobs-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.saved-jobs-header h1 {
+  font-size: 36px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.saved-jobs-header p {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.saved-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.saved-job-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.saved-job-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 20px rgba(254, 119, 67, 0.15);
+  transform: translateY(-2px);
+}
+
+.unsave-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.unsave-btn:hover {
+  transform: scale(1.2);
+}
+
+.job-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.company-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+.job-title-section h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.job-title-section p {
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+
+.job-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.job-badge {
+  background: var(--background-light);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.job-location {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.remote-badge {
+  background: #e8f5e9;
+  color: var(--success-color);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.job-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.saved-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .saved-jobs-header h1 {
+    font-size: 28px;
+  }
+
+  .saved-jobs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .job-footer .btn {
+    width: 100%;
+  }
+}
